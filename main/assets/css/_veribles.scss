@@ -1,0 +1,9 @@
+$blackColor:black;
+$whiteColor:white;
+$mainColor:rgba(244, 244, 244, 1);
+@mixin btn(){
+background-color: transparent;
+border: 1px solid $blackColor;
+border-radius: 10px;
+padding: 5px 10px;
+}

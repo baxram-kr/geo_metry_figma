@@ -1,0 +1,385 @@
+@import './veribles';
+@import './globle';
+body{
+    background-color: $mainColor;
+}
+.container{
+
+    @media (max-width:1000px) {
+        width: 100%;
+    }
+    @media (max-width:1000px) {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    background-color: $whiteColor;
+    .nav__img{
+        width: 150px;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        display: flex;
+        gap: 15px;
+        a{
+            padding: 5px;
+            margin: 0 10px;
+            color: $blackColor;
+        }
+        @media (max-width:1000px) {
+            display: none;
+          }
+    }
+}
+header{
+border-radius: 80px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+width: 90%;
+margin: 0 auto;
+padding: 40px;
+margin-top: 50px;
+@media (max-width:1000px) {
+    padding: 20px;
+  }
+.h__top{
+    #eki{
+        border-radius: 35px;
+        background: #FFF;
+        box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+                }
+    ul{
+        display: flex;
+        margin: 30px 0;
+        align-items: center;
+        flex-wrap: wrap;
+        a{
+            padding: 15px;
+            background-color: $blackColor;
+            color: $whiteColor;
+            border-radius: 5px;
+            &:hover{color: $blackColor;background-color: $whiteColor;}       
+            @media (max-width:1000px) {
+            padding: 5px;
+          }
+            
+
+        }
+        select ,p{  padding: 15px;
+            color: $blackColor;
+            border: none;
+            background-color: $whiteColor;
+          
+            @media (max-width:1000px) {
+                padding: 5px;
+              }
+  
+        }       
+    }
+}
+.h__bottom{
+
+    img{
+        width: 100%;
+        position: relative;
+    }
+    button{
+        position: absolute;
+        @include btn();
+        bottom: 30px ;
+        right: 150px;
+        background-color: $whiteColor;
+        padding: 10px 15px;
+        @media (max-width:1000px) {
+           display: none;
+          }
+    }
+}
+}
+.quri{
+width: 90%;
+margin: 0 auto;
+margin-top: 40px;
+h1{
+    margin: 30px 0;
+}
+button{
+    @include btn();
+    margin-left: 45%;
+    @media (max-width:1000px) {
+        margin-left: 10%;
+    }
+    padding: 15px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: white;
+}
+}
+.card__k{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    &__box{
+    width: 45%;
+   
+
+    @media (max-width:1000px) {
+        width: 100%;
+    }
+    .img{
+        @media (max-width:1000px) {
+            width: 250px;
+            img{
+                width: 100%;
+            }
+        } 
+    }
+    .text{
+        padding: 20px;
+        background-color: $whiteColor;
+        border-radius:0 0 80px 80px;
+    }
+    }
+}
+.card__n{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    &__box{
+        width: 30%;
+        @media (max-width:1000px) {
+            width: 100%;
+        }
+        .text{
+            padding: 20px;
+            background: $whiteColor;
+            border-radius: 0 0 40px 40px;
+            position: relative;
+            top: -80px;
+            text-align: center;
+
+        }
+        .img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.queation{
+    background-image: url(../media/man-giving-some-keys-woman\ 1.png);
+    margin: 40px 0;
+    .qo{
+        background: linear-gradient(103.3deg, #766452 0%, rgba(90, 72, 52, 0.4) 100%);
+        padding: 70px;
+        @media (max-width:1000px) {
+            padding: 20px;
+         }
+        h1{
+            color: $whiteColor;
+            font-size: 50px;
+            width: 45%;
+            margin-bottom: 30px;
+            @media (max-width:1000px) {
+                width: 100%;
+                font-size: 30px;
+            }
+
+        }
+        p{
+            color: $whiteColor;
+            font-size: 28px;
+            margin-bottom: 20px;
+            width: 60%;
+            color: $mainColor;
+            opacity: 0.8;
+            @media (max-width:1000px) {
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        button{
+            @include btn();
+         
+            background-color: $whiteColor;
+            border: none;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+    }
+
+
+}
+.queation-2{
+    background-image: url(../media/modern-tall-glass-buildings-downtown\ 1.png);
+    margin: 40px 0;
+    .qo{
+        background: linear-gradient(103.3deg, #766452 0%, rgba(90, 72, 52, 0.4) 100%);
+        padding: 70px;
+        @media (max-width:1000px) {
+           padding: 20px;
+        }
+        h1{
+            color: $whiteColor;
+            font-size: 50px;
+            width: 45%;
+            margin-bottom: 30px;
+            @media (max-width:1000px) {
+                width: 100%;
+                font-size: 30px;
+            }
+
+        }
+        p{
+            color: $whiteColor;
+            font-size: 28px;
+            margin-bottom: 20px;
+            width: 60%;
+            color: $mainColor;
+            opacity: 0.8;
+            @media (max-width:1000px) {
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        button{
+            @include btn();
+         
+            background-color: $whiteColor;
+            border: none;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            margin-top: 100px;
+        }
+    }
+
+
+}
+.mini__card{
+    .box{
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid $blackColor;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+}
+.owner__card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .box{
+        padding: 20px;
+        width: 19%;
+        @media (max-width:1000px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        border: 1px solid $blackColor;
+        border-radius: 10px;
+        text-align: center;
+        .text{
+            h3{
+                margin: 10px 0;
+            }
+        }
+    }
+    
+}
+.two__card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .item-70{
+        width: 69%;
+        @media (max-width:1000px) {
+            width: 100%;
+        }
+        border-radius: 50px;
+        background: #766452;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: $whiteColor;
+    }
+    .item-30{
+        @media (max-width:1000px) {
+            width: 100%;
+        }
+        width: 29%;
+        border-radius: 50px;
+        background: #766452;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: $whiteColor;
+    }
+
+}
+
+footer{
+    background-color: $blackColor;
+    margin-top: 80px;
+    .show{
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        color: $whiteColor;
+        flex-wrap: wrap;
+        .left{
+            @media (max-width:1000px) {
+                width: 100%;
+            }
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            ul{
+                li{
+                    padding: 10px 0;
+                    a{
+                        color: white;
+                        
+                    }
+                }
+            }
+            
+        }
+        .roa{
+            @media (max-width:1000px) {
+                width: 100%;
+            }
+            ul{
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            a{
+                color: white;
+                padding: 10px;
+            }
+        }
+        }
+    }
+}
+.soni{
+    padding: 20px;
+    border-top: 1px solid $whiteColor;
+    color: white;
+    font-size: 13px;
+    padding-left: 50px;
+}

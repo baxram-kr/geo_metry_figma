@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(244, 244, 244);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  background-color: white;
+}
+nav .nav__img {
+  width: 150px;
+}
+nav .nav__img img {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+nav ul a {
+  padding: 5px;
+  margin: 0 10px;
+  color: black;
+}
+@media (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+}
+
+header {
+  border-radius: 80px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 50px;
+}
+@media (max-width: 1000px) {
+  header {
+    padding: 20px;
+  }
+}
+header .h__top #eki {
+  border-radius: 35px;
+  background: #FFF;
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+header .h__top ul {
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .h__top ul a {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+header .h__top ul a:hover {
+  color: black;
+  background-color: white;
+}
+@media (max-width: 1000px) {
+  header .h__top ul a {
+    padding: 5px;
+  }
+}
+header .h__top ul select, header .h__top ul p {
+  padding: 15px;
+  color: black;
+  border: none;
+  background-color: white;
+}
+@media (max-width: 1000px) {
+  header .h__top ul select, header .h__top ul p {
+    padding: 5px;
+  }
+}
+header .h__bottom img {
+  width: 100%;
+  position: relative;
+}
+header .h__bottom button {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  bottom: 30px;
+  right: 150px;
+  background-color: white;
+  padding: 10px 15px;
+}
+@media (max-width: 1000px) {
+  header .h__bottom button {
+    display: none;
+  }
+}
+
+.quri {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.quri h1 {
+  margin: 30px 0;
+}
+.quri button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 45%;
+  padding: 15px;
+  border-radius: 20px;
+  width: 150px;
+  background-color: white;
+}
+@media (max-width: 1000px) {
+  .quri button {
+    margin-left: 10%;
+  }
+}
+
+.card__k {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card__k__box {
+  width: 45%;
+}
+@media (max-width: 1000px) {
+  .card__k__box {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .card__k__box .img {
+    width: 250px;
+  }
+  .card__k__box .img img {
+    width: 100%;
+  }
+}
+.card__k__box .text {
+  padding: 20px;
+  background-color: white;
+  border-radius: 0 0 80px 80px;
+}
+
+.card__n {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.card__n__box {
+  width: 30%;
+}
+@media (max-width: 1000px) {
+  .card__n__box {
+    width: 100%;
+  }
+}
+.card__n__box .text {
+  padding: 20px;
+  background: white;
+  border-radius: 0 0 40px 40px;
+  position: relative;
+  top: -80px;
+  text-align: center;
+}
+.card__n__box .img img {
+  width: 100%;
+}
+
+.queation {
+  background-image: url(../media/man-giving-some-keys-woman\ 1.png);
+  margin: 40px 0;
+}
+.queation .qo {
+  background: linear-gradient(103.3deg, #766452 0%, rgba(90, 72, 52, 0.4) 100%);
+  padding: 70px;
+}
+@media (max-width: 1000px) {
+  .queation .qo {
+    padding: 20px;
+  }
+}
+.queation .qo h1 {
+  color: white;
+  font-size: 50px;
+  width: 45%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  .queation .qo h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+.queation .qo p {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+  width: 60%;
+  color: rgb(244, 244, 244);
+  opacity: 0.8;
+}
+@media (max-width: 1000px) {
+  .queation .qo p {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+.queation .qo button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.queation-2 {
+  background-image: url(../media/modern-tall-glass-buildings-downtown\ 1.png);
+  margin: 40px 0;
+}
+.queation-2 .qo {
+  background: linear-gradient(103.3deg, #766452 0%, rgba(90, 72, 52, 0.4) 100%);
+  padding: 70px;
+}
+@media (max-width: 1000px) {
+  .queation-2 .qo {
+    padding: 20px;
+  }
+}
+.queation-2 .qo h1 {
+  color: white;
+  font-size: 50px;
+  width: 45%;
+  margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  .queation-2 .qo h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+.queation-2 .qo p {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+  width: 60%;
+  color: rgb(244, 244, 244);
+  opacity: 0.8;
+}
+@media (max-width: 1000px) {
+  .queation-2 .qo p {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+.queation-2 .qo button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 100px;
+}
+
+.mini__card .box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.owner__card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.owner__card .box {
+  padding: 20px;
+  width: 19%;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .owner__card .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.owner__card .box .text h3 {
+  margin: 10px 0;
+}
+
+.two__card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.two__card .item-70 {
+  width: 69%;
+  border-radius: 50px;
+  background: #766452;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .two__card .item-70 {
+    width: 100%;
+  }
+}
+.two__card .item-30 {
+  width: 29%;
+  border-radius: 50px;
+  background: #766452;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .two__card .item-30 {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: black;
+  margin-top: 80px;
+}
+footer .show {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: white;
+  flex-wrap: wrap;
+}
+footer .show .left {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  footer .show .left {
+    width: 100%;
+  }
+}
+footer .show .left ul li {
+  padding: 10px 0;
+}
+footer .show .left ul li a {
+  color: white;
+}
+@media (max-width: 1000px) {
+  footer .show .roa {
+    width: 100%;
+  }
+}
+footer .show .roa ul {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+footer .show .roa ul a {
+  color: white;
+  padding: 10px;
+}
+
+.soni {
+  padding: 20px;
+  border-top: 1px solid white;
+  color: white;
+  font-size: 13px;
+  padding-left: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
